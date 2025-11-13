@@ -1,14 +1,12 @@
 {
   "type": "module",
-  "scripts": {
+ "scripts": {
   "dev": "node server.js --dev",
   "start": "node server.js",
-  "build": "echo \"Skipping build step (dev-only deployment)\"",
-  "build:client": "vite build --outDir dist/client --ssrManifest",
-  "build:server": "vite build --outDir dist/server --ssr /index.js",
-  "devinstall": "zx ../../devinstall.mjs -- node server.js --dev",
+  "build": "echo \"Skipping build step\"",
   "lint": "eslint . --ext .js,.jsx --fix"
-  },
+}
+,
   "dependencies": {
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
