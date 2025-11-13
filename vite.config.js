@@ -7,8 +7,12 @@ const path = fileURLToPath(import.meta.url);
 export default {
   root: join(dirname(path), "client"),
   plugins: [react()],
-  server: {
-  allowedHosts: true,
+ server: {
+  allowedHosts: [
+    "localhost",
+    "127.0.0.1",
+    "openai-realtime-console-production-47b1.up.railway.app",
+  ],
   host: true,
 },
 };
